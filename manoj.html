@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>MC BOOKS</title>
+     <link rel="stylesheet" href="charmer.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <div class="navbar">
+          <h1>MC BOOKS</h1>
+     </div>
+
+     <div class="container">
+          <div class="book-container">
+               <h2>Rich Dad, Poor Dad</h2>
+               <h5>	Robert Kiyosaki and Sharon L. Lechter</h5>
+               <p>
+                    The story begins with the author as a young boy, observing the contrasting financial mindsets and behaviors of his own father, the "poor dad," and a friend's father, the "rich dad." The poor dad held a high position in education and emphasized the importance of academic success, job security, and living within one's means. The rich dad, a successful entrepreneur, believed in building assets, investing wisely, and acquiring financial knowledge. It describes how the rich dad teaches the author and his friend finance through practical lessons.
+
+Throughout the book, Kiyosaki shares anecdotes and conversations that he had with the rich dad, who guided him on various aspects of money, wealth creation, and financial independence. He learns valuable lessons about the difference between assets and liabilities, the power of financial education, and the importance of taking calculated risks. Kiyosaki emphasizes the significance of acquiring assets that generate income, such as real estate and businesses, as opposed to liabilities that drain money, such as excessive consumer debt and unnecessary expenses. 
+The book also delves into the mindset and beliefs around money, discussing the importance of developing a positive relationship with wealth and overcoming limiting beliefs. Kiyosaki stresses the need for financial literacy and encourages readers to take control of their financial destinies by seeking out opportunities, learning from mistakes, and continuously educating themselves about money.
+               </p>
+               <button type="submit" onclick="deletebook(event)">Delete</button>
+          </div>
+     </div>
+
+     <div class="popup-overlay"></div>
+
+     <div class="popup-box">
+          <h2>Add Book</h2>
+          <form>
+               <input type="text" placeholder="Book Title" id="book-title-input">
+               <input type="text" placeholder="Book Author" id="book-author-input">
+               <textarea placeholder="Short Description" id="book-description-input"></textarea>
+               <button type="submit" id="add-book">ADD</button>
+               <button type="submit" id="cancel-popup">CANCEL</button>
+          </form>
+     </div>
+
+     <button type="submit" class="add-button" id="add-popup-button">+</button>
+     <script src="mc.js"></script>
+</body>
+</html>
